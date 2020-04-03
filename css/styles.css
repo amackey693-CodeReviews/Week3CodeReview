@@ -6,7 +6,19 @@
 .well {
   text-align: left;
 }
+
+.roboGuy {
+  margin: initial;
+  padding: 20px;
+  background-color: #f2f0f0;
+}
+
 body {
   background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
  
+}
+
+img {
+  width: 75%;
+  height: 75%;
 }

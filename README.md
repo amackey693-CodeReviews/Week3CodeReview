@@ -21,19 +21,19 @@ _This application will take a number from a user and return a range of numbers f
 ## Behavior Driven Development 
 
 Behavior Description          |   Input Ex.     |  Output Ex. 
-- Does not accept text  or    |      abc        | "Please enter a number"
+- Does not accept text  or    |      abc        |   "Please enter a number" [√]
 0 input                       |       0         |
 
-- Counts up to number         |       5         | 1, 2, 3, 4, 5 
+- Counts up to number         |       5         |   1, 2, 3, 4, 5 [√]
 inputted by user 
 
-- If a # contains a 1 all     |       10        | "Beep", 2, 3, 4, 5,
+- If a # contains a 1 all     |       10        |   "Beep", 2, 3, 4, 5, [X]
 digits are replaced w/ "Beep! |                 |   6, 7, 8, 9, "Beep"
 
-- If a # contains a 2 all     |       2         |   "Beep", "Boop"   
+- If a # contains a 2 all     |       2         |   "Beep", "Boop"   [X]
 digits are replaced w/ "Boop" |                 |
 
-- If a # contains a  3 all    |       3         | "Beep", Boop", "Won't you 
+- If a # contains a  3 all    |       3         | "Beep", Boop", "Won't you [X] 
 digits are replaced w/        |                 |      be my neighbor?" 
 sentence "Won't you be my     |                 |
 neighbor?" 
@@ -41,7 +41,7 @@ neighbor?"
 
 ## Known Bugs
 
-_none at this time_
+_was not able to get past behavior 2 successfully at this time. will need to review lessons & re-submit._
 
 ## Support and contact details
 
