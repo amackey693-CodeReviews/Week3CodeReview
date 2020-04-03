@@ -1,13 +1,15 @@
 //Business Logic : 
-var contains = ["1", "2", "3"];
-var counts = [];
+var counts = [""];
 var roboConversion = function (userInput) {
   if (userInput === 0) {
     return alert('Enter Number');
-  } 
-  for (i = 0; i <= userInput; i += 1) {
-  counts.push(i + 1);
-  console.log(i)
+  }  
+  for (var i = 0; i <= userInput; i ++) {
+    var counting = counts.push(i);
+    console.log("counting", counting)
+    if (i===1){
+      counts.push("Beep!");
+      
   } 
 }
 //   var userInput = num.split(" ");
