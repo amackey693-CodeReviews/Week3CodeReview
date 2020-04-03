@@ -1,10 +1,14 @@
 //Business Logic : 
 var contains = ["1", "2", "3"];
-
+var counts = [];
 var roboConversion = function (userInput) {
-  if (userInput != NaN || userInput === 0) {
-    return 'Enter Number';
-  }
+  if (userInput === 0) {
+    return alert('Enter Number');
+  } 
+  for (i = 0; i <= userInput; i += 1) {
+  counts.push(i + 1);
+  console.log(i)
+  } 
 }
 //   var userInput = num.split(" ");
 //   var newOutput = userInput.forEach(function(num1) {
@@ -36,8 +40,8 @@ $(document).ready(function(){
     var userInput = parseInt($("#userInput").val())
     var newOutput = roboConversion(userInput);
 
-    console.log(userInput)
-    console.log(newOutput)
+    
+    
 
     $("#output").show(newOutput)
   });
