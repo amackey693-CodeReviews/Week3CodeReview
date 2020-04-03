@@ -1,10 +1,11 @@
 //Business Logic : 
 
-var counts = [];
+
 function roboConversion (userInput) {
-  // var removeItems = [3, 2, 1]
-  // var replaceItems = ["Won't you be my neighbor?", "Beep", "Boop"]
+  var removeItems = [1]
+  var replaceItems = ["Boop"]
   var newString = [" "];
+  var counts = []; //array for userInput 
 
   if (userInput === 0) {
     alert('Enter Number');
@@ -12,10 +13,12 @@ function roboConversion (userInput) {
   // creates new array for counting numbers
   for (var i = 0; i <= userInput; i += 1) {  
     counts.push(i);
-    if (counts.indexOf(1) {
-      newString.push(counts + "Beep")
+    // attempts to 
+  } if (counts.length === removeItems) {
+    for (var i = removeItems; i <= counts; i++) {
+      counts + newString.push(i + replaceItems)
     }
-  }  
+  }
   return newString;
 }
 
