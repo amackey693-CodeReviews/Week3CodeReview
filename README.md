@@ -21,11 +21,14 @@ _This application will take a number from a user and return a range of numbers f
 ## Behavior Driven Development 
 
 Behavior Description          |   Input Ex.     |  Output Ex. 
-- Does not accept a text      |     abc         | "Please enter a number"
-input                         |
+- Does not accept text  or    |      abc        | "Please enter a number"
+0 input                       |       0         |
 
-- If a # contains a 1 all     |       1         |     "Beep" 
-digits are replaced w/ "Beep! |                 | 
+- Counts up to number         |       5         | 1, 2, 3, 4, 5 
+inputted by user 
+
+- If a # contains a 1 all     |       10        | "Beep", 2, 3, 4, 5,
+digits are replaced w/ "Beep! |                 |   6, 7, 8, 9, "Beep"
 
 - If a # contains a 2 all     |       2         |   "Beep", "Boop"   
 digits are replaced w/ "Boop" |                 |
