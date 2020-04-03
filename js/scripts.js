@@ -5,7 +5,7 @@ function roboConversion (userInput) {
   var removeItems = [1]
   var replaceItems = ["Boop"]
   var newString = [" "];
-  var counts = []; //array for userInput 
+  var counts = []; // creates array for userInput 
 
   if (userInput === 0) {
     alert('Enter Number');
@@ -13,20 +13,32 @@ function roboConversion (userInput) {
   // creates new array for counting numbers
   for (var i = 0; i <= userInput; i += 1) {  
     counts.push(i);
-    // attempts to 
-  } if (counts.length === removeItems) {
-    for (var i = removeItems; i <= counts; i++) {
-      counts + newString.push(i + replaceItems)
+  } counts.forEach(function(num) {
+    if (num === removeItems) {
+      num.replace(replaceItems);
+      newString.push(num)
     }
-  }
-  return newString;
+    console.log(counts)
+    console.log(removeItems)
+   });
+  return newString
 }
+
+
+// attempts to 
+//   } if (counts.length === removeItems) {
+// //     for (var i = counts; i <= counts; i++) {
+// //       newString = counts.push(i + replaceItems)
+// //     }
+// //   }
+// //   return newString;
+// // }
 
 //User Interface Logic: 
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
-    var userInput = parseInt($("#userInput").val())
+    var userInput = parseInt($("#userInput").val().split())
     var newOutput = roboConversion(userInput);
     
     // console.log(userInput);
