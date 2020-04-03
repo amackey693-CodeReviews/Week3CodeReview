@@ -47,7 +47,6 @@ $(document).ready(function(){
     
     console.log("UserInput", userInput);
     console.log("newOutput", newOutput);
-    
 
     $("#output").html("<li>" + newOutput + "</li>")
   });

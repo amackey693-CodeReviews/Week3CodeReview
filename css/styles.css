@@ -1,4 +1,12 @@
+.container {
+  padding: 20px;
+  text-align: center;
+}
 
+.well {
+  text-align: left;
+}
 body {
+  background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
  
 }
