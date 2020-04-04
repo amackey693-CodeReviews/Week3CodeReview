@@ -25,11 +25,9 @@ _This application will take a number from a user and return a range of numbers f
 |---------------------------|--------------|--------------------------|
 | 1. Does not accept text or 0 input   |    abc or 0  | "Please enter a number"[√]  |
 | 2. Counts up to number inputted by user |       5    |  1, 2, 3, 4, 5 [√] |
-| 3. If a # contains a 1 all digits are replaced w/ "Beep" |  1  |  "Beep"  | 
+| 3. If a # contains a 1 all digits are replaced w/ "Beep" |  1  |  "Beep" [X]  | 
 | 4. If a # contains a 2 all digits are replaced w/ "Boop" |  2  | "Beep", "Boop"  [X]  |
-| If a # contains a  3 all digits are replaced w/ sentence "Won't you be my neighbor?"   |  3  | "Beep", Boop", "Won't you be my neighbor?"  [X] |
-
-
+| 5. If a # contains a  3 all digits are replaced w/ sentence "Won't you be my neighbor?"   |  3  | "Beep", Boop", "Won't you be my neighbor?"  |
 
 ## Known Bugs
 
