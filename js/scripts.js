@@ -5,22 +5,24 @@ function roboConversion (userInput) {
   
   if (userInput === 0) {
     alert('Enter Number');
-  }  
+  }
+
   // creates new array for counting numbers
   for (var i = 0; i <= userInput; i += 1) {  
     counts.push(i);
   }
 
   for (var i = 0; i <= counts.length; i ++) {
-    var num = counts[i]; // creates variable from counts "at" index 
+    // var num = counts[i]; // creates variable from counts "at" index 
+    var num = i.toString();
 
-    if (num === 1) {
+    if (num === "1") {
       num = "Beep"
     }
-    if (num === 2) {
+    if (num === "2") {
       num = "Boop"
     }
-    if (num === 3) {
+    if (num === "3") {
       num = "Won't you be my neighbor?"
     }
     
