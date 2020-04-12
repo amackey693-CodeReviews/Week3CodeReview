@@ -14,22 +14,24 @@ function roboConversion (userInput) {
 
   for (var i = 0; i <= userInput; i += 1) {
     // var num = counts[i]; // creates variable from counts "at" index 
-    var num = i.toString();
+    var num = i.toString(); // creates string from index of "userInput"
 
     if (num.indexOf("3") > -1 ) {
       num = "Won't you be my neighbor?";
     }
-    // else if (num.indexOf("2")) {
-    //   num = "Boop"
-    // }
-    // else if (num.indexOf("1")) {
-    //   num = "Beep"
-    // }
+    else if (num.indexOf("2") > -1) {
+      num = "Boop"
+    }
+    else if (num.indexOf("1") > -1) {
+      num = "Beep"
+    }
     
     finalResult.push(num);
   } 
-  console.log("i", i)
-  console.log("num", num);
+
+  // console.log (num.indexOf())
+  // console.log("i", i)
+  // console.log("num", num);
   // console.log("counts", counts);
   // console.log("final result", finalResult);
   return finalResult;  
