@@ -1,42 +1,35 @@
 //Business Logic : 
 function roboConversion (userInput) {
-  var counts = []; // creates array for userInput 
-  var removeItems = [3, 2, 1];
-  var replaceItems = ["WYBMN", "Boop", "Beep"]
-  var newArray = [];
+  var finalResult = []; 
   
-  if (userInput === 0) {
-    alert('Enter Number');
-  }  
-  // creates new array for counting numbers
-  for (var i = 0; i <= userInput; i += 1) {  
-    counts.push(i) 
-  } if (counts === removeItems) {
-    counts.replaceItems; 
+  if (isNaN(userInput) || userInput === 0) {
+    finalResult.push("Enter Number!");
+    return finalResult;
+  }
+
+  for (var i = 0; i <= userInput; i += 1) {
+    var num = i.toString(); // creates string from index of "userInput"
+
+    if (num.indexOf("3") > -1 ) {
+      num = "Won't you be my neighbor?";
+    }
+    else if (num.indexOf("2") > -1) {
+      num = "Boop"
+    }
+    else if (num.indexOf("1") > -1) {
+      num = "Beep"
+    }
+    
+    finalResult.push(num);
   } 
-  console.log(counts)
-  return counts
-  
 
-      // I don't know what I'm doing & it's frustrating me!!!
-
-  // } if (counts.indexOf(1)||counts.indexOf(2)||counts.indexOf(3)) {
-  //   counts.pop("Beep");
-  // } 
-  //  
-  // console.log(removeItems)
-  // console.log(newString)
+  // console.log (num.indexOf())
+  // console.log("i", i)
+  // console.log("num", num);
+  // console.log("counts", counts);
+  // console.log("final result", finalResult);
+  return finalResult;  
 }
-
-
-  // attempts to 
-  //   } if (counts.length === removeItems) {
-  // //     for (var i = counts; i <= counts; i++) {
-  // //       newString = counts.push(i + replaceItems)
-  // //     }
-  // //   }
-  // //   return newString;
-  // // }
 
   //User Interface Logic: 
 $(document).ready(function(){
@@ -45,9 +38,6 @@ $(document).ready(function(){
     var userInput = $("#userInput").val().split();
     var newOutput = roboConversion(parseInt(userInput));
     
-    console.log("UserInput", userInput);
-    console.log("newOutput", newOutput);
-
     $("#output").html("<li>" + newOutput + "</li>")
   });
 });
