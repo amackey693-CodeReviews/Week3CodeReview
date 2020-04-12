@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application will take a number from a user and return a range of numbers from 0 to the number inputted by the user. See BDD below for more information. 
+_This application will take a number from a user and return a range of numbers from 0 to the number inputted by the user. See BDD below for more information._ 
 
 ## Setup/Installation Requirements
 
@@ -20,28 +20,18 @@ _This application will take a number from a user and return a range of numbers f
 
 ## Behavior Driven Development 
 
-Behavior Description          |   Input Ex.     |  Output Ex. 
-- Does not accept text  or    |      abc        |   "Please enter a number" [√]
-0 input                       |       0         |
 
-- Counts up to number         |       5         |   1, 2, 3, 4, 5 [√]
-inputted by user 
-
-- If a # contains a 1 all     |       10        |   "Beep", 2, 3, 4, 5, [X]
-digits are replaced w/ "Beep! |                 |   6, 7, 8, 9, "Beep"
-
-- If a # contains a 2 all     |       2         |   "Beep", "Boop"   [X]
-digits are replaced w/ "Boop" |                 |
-
-- If a # contains a  3 all    |       3         | "Beep", Boop", "Won't you [X] 
-digits are replaced w/        |                 |      be my neighbor?" 
-sentence "Won't you be my     |                 |
-neighbor?" 
-
+|   Behavior Description    |  Input Ex.   |        Output Ex.        |  
+|---------------------------|--------------|--------------------------|
+| 1. Does not accept text or 0 input   |    abc or 0  | "Please enter a number"[√]  |
+| 2. Counts up to number inputted by user |       5    |  1, 2, 3, 4, 5 [√] |
+| 3. If a # contains a 1 all digits are replaced w/ "Beep" |  1  |  "Beep" [√]  | 
+| 4. If a # contains a 2 all digits are replaced w/ "Boop" |  2  | "Beep", "Boop"  [√]  |
+| 5. If a # contains a  3 all digits are replaced w/ sentence "Won't you be my neighbor?"   |  3  | "Beep", Boop", "Won't you be my neighbor?" [√] |
 
 ## Known Bugs
 
-_was not able to get past behavior 2 successfully at this time. will need to review lessons & re-submit._
+_No known bugs at this time!_
 
 ## Support and contact details
 
